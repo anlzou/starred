@@ -2,7 +2,7 @@
  * @Date        : 2020-08-29 09:50:24
  * @LastEditors : anlzou
  * @Github      : https://github.com/anlzou
- * @LastEditTime: 2020-08-30 03:00:44
+ * @LastEditTime: 2020-08-30 03:56:36
  * @FilePath    : \starred\README.md
  * @Describe    : 
 -->
@@ -80,8 +80,8 @@ $ starred --username yourname --repository awesome-stars --sort
 - [ ] 建立网站
 - [ ] 新的爬虫算法
 
-## Issue
-```py
+## Issues
+```
 运行：starred --username anlzou --sort > StarList.md
 
 报错：
