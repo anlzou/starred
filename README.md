@@ -1,3 +1,11 @@
+<!--
+ * @Date        : 2020-08-29 09:50:24
+ * @LastEditors : anlzou
+ * @Github      : https://github.com/anlzou
+ * @LastEditTime: 2020-08-30 03:00:44
+ * @FilePath    : \starred\README.md
+ * @Describe    : 
+-->
 # Starred
 
 [![github workflow](https://github.com/maguowei/starred/workflows/ci/badge.svg)](https://github.com/maguowei/starred/actions)
@@ -65,3 +73,23 @@ $ starred --username yourname --repository awesome-stars --sort
     ```bash
     $ pip install -e git+https://github.com/maguowei/starred#egg=starred
     ```
+
+## New function
+- [ ] 内容折叠
+- [ ] 模板
+- [ ] 建立网站
+- [ ] 新的爬虫算法
+
+## Issue
+```py
+运行：starred --username anlzou --sort > StarList.md
+
+报错：
+......
+File "c:\users\administrator\appdata\local\programs\python\python37\lib\site-packages\click\utils.py", line 260, in echo
+file.write(message)
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f62e' in position 60: illegal multibyte sequence
+
+解决如下：
+utils.py->echo()函数中添加该代码：message = message.encode("utf-8")
+```
